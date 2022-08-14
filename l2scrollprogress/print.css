@@ -1,0 +1,29 @@
+body {
+  color: #00aaff;
+}
+
+.print-btn {
+  display: none;
+}
+
+.header {
+  position: static;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.content {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+
+  padding: 0 50px;
+}
+
+.page-break {
+  page-break-after: always;
+}
+
+@page {
+  /* size: Legal; */
+  margin: 0;
+}

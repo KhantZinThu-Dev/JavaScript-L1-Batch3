@@ -1,0 +1,58 @@
+body {
+  font-family: sans-serif;
+}
+
+.accordion {
+  width: 100%;
+}
+
+.accordion-title {
+  background-color: #777;
+  color: #fff;
+  font-size: 18px;
+
+  margin: 0;
+  padding: 15px;
+
+  user-select: none;
+  cursor: pointer;
+
+  position: relative;
+
+  transition: background-color 0.25s;
+}
+
+.accordion-title:hover,
+.active {
+  background-color: steelblue;
+}
+
+.accordion-title::after {
+  content: "\f067";
+  font-family: "Font Awesome 5 Free";
+
+  /* position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%); */
+
+  float: right;
+}
+
+.active.accordion-title::after {
+  content: "\f068";
+}
+
+.accordion-content {
+  height: 0;
+  background-color: #f4f4f4;
+  font-size: 15px;
+  text-indent: 50px;
+  text-align: justify;
+
+  padding: 0 20px;
+
+  overflow: hidden;
+
+  transition: height 0.5s;
+}
