@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100vh;
+
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  width: 600px;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel-inner {
+  background-color: #f4f4f4;
+}
+
+.carousel-item {
+  text-align: center;
+  padding: 40px 20px 80px;
+
+  display: none;
+}
+
+.user {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.job-title {
+  margin-bottom: 25px;
+}
+
+.contact-btn {
+  background-color: steelblue;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px;
+
+  opacity: 0.95;
+}
+
+.contact-btn:hover {
+  opacity: 1;
+}
+
+.carousel-indicators {
+  width: 100%;
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin: 0 7px;
+  display: inline-block;
+
+  cursor: pointer;
+
+  transition: background-color 0.25s ease-in;
+}
+
+.dot:hover,
+.active {
+  background-color: #aaa;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  color: #aaa;
+  font-size: 25px;
+  padding: 10px;
+
+  position: absolute;
+  top: 50%;
+
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
+
+.carousel-control-prev:hover {
+  animation: left-control 0.5s infinite alternate;
+}
+
+.carousel-control-next:hover {
+  animation: right-control 0.5s infinite alternate;
+}
+
+@keyframes left-control {
+  from {
+    opacity: 0.75;
+  }
+  to {
+    left: 30px;
+    opacity: 1;
+  }
+}
+
+@keyframes right-control {
+  from {
+    opacity: 0.75;
+  }
+  to {
+    right: 30px;
+    opacity: 1;
+  }
+}

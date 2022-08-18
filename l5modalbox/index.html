@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Modal Box</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Modal Sign Up</h2>
+
+      <button id="btn-signup">Sign Up</button>
+      <button id="btn-open-fullscreen" style="margin: 0 5px 0">
+        Open Fullscreen
+      </button>
+      <button id="btn-close-fullscreen">Close Fullscreen</button>
+
+      <!-- START MODAL AREA -->
+      <!-- Start Sign Up Modal -->
+      <div id="signup-modal" class="modal">
+        <span class="btn-close">x</span>
+
+        <form class="form" action="" method="">
+          <h2>Register Form</h2>
+
+          <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              class="input-group-text"
+              placeholder="Username"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="input-group-text"
+              placeholder="Email"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="input-group">
+            <i class="fas fa-key"></i>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="input-group-text"
+              placeholder="Password"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="d-grid">
+            <button class="btn" type="submit">Register</button>
+          </div>
+        </form>
+      </div>
+      <!-- End Sign Up Modal -->
+      <!-- END MODAL AREA -->
+    </div>
+
+    <!-- JS -->
+    <script src="./app.js" type="text/javascript"></script>
+  </body>
+</html>
